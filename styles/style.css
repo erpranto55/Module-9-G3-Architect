@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.text-gray {
+    /* dark02 */
+    color: #424242;
+}
+
+.text-light-gray {
+    /* dark03 */
+    color: #727272;
+}
+
+.btn-primary {
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
+
+
+
+
+/* Header styles */
+header {
+    width: 100%;
+}
+
+/* Navbar related styles */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.brand {
+    color: #131313;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.nav-links {
+    font-size: 1.2rem;
+    line-height: 26px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.navbar,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Banner related styles */
+
+.banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    width: 100%;
+    max-width: 862px;
+    max-height: 225px;
+    font-weight: 700;
+    font-size: 4rem;
+    padding-bottom: 30px;
+}
+
+.banner-paragraph {
+    padding-bottom: 15px;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+
+
+/* @media-query for responsive */
+
+@media screen and (max-width:576px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .nav-item {
+        margin-right: 0;
+    }
+
+    .brand {
+        font-size: 2rem;
+    }
+
+    /* Banner */
+    .banner-title {
+        font-size: 2.2rem;
+    }
+
+    .banner-content {
+        padding: 0 10px;
+    }
+
+
+}
