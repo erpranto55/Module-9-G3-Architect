@@ -242,15 +242,13 @@ header {
 
 
 .exp {
-    position: relative;
+    flex-direction: column;
 }
 
-/* .exp img {
+.exp img {
     width: 100%;
     max-width: 700px;
-    height: auto;
-    display: block;
-} */
+}
 
 .btn-exp {
     max-width: 342px;
